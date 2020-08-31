@@ -34,17 +34,6 @@ async def on_member_join(member):
 async def on_message(message):
     if message.author==client.user:
         return 
-    quotes = [
-        'I\'m the human form of the 💯 emoji.',
-        'Bingpot!',
-        (
-            'Cool. Cool cool cool cool cool cool cool, '
-            'no doubt no doubt no doubt no doubt.'
-        ),
-    ]
-    if message.content=="99!":
-        response=random.choice(quotes)
-        await message.channel.send(response)
     
     known={"Hi":"Hey, how are you?","Favorite Character":"Yamori from TKG.","Whats yoyr age?":"Does it matter.","Who are you?":"Your future master, but rn I'm just a little bot."}
 
