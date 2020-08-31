@@ -35,7 +35,7 @@ async def on_message(message):
     if message.author==client.user:
         return 
     
-    known={"Hi":"Hey, how are you?","Favorite Character":"Yamori from TKG.","Whats yoyr age?":"Does it matter.","Who are you?":"Your future master, but rn I'm just a little bot."}
+    known={"Hi":"Hey, how are you?","Favorite Character":"Yamori from TKG.","Whats your age?":"Does it matter.","Who are you?":"Your future master, but rn I'm just a little bot."}
 
     if message.content in known:
         await message.channel.send(
